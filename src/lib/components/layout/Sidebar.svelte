@@ -25,7 +25,7 @@
 
 	onMount(async () => {
 		if (window.innerWidth > 1280) {
-			show = true;
+			show = false;
 		}
 
 		await chats.set(await $db.getChats());
