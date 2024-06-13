@@ -2,6 +2,11 @@
 
 run `npm run build` and cd into build folder and run `valet link ollama-webui`
 
+# Proxy setup for HTTP
+
+run `valet proxy ollama.test http://localhost:11434 --secure`  
+allow CORS with `launchctl setenv OLLAMA_ORIGINS "https://ollama.test"` restart app
+
 # Ollama Web UI Lite 🦙
 
 Ollama Web UI Lite is a streamlined version of [Ollama Web UI](https://github.com/ollama-webui/ollama-webui), designed to offer a simplified user interface with minimal features and reduced complexity. The primary focus of this project is on achieving cleaner code through a full TypeScript migration, adopting a more modular architecture, ensuring comprehensive test coverage, and implementing a robust CI/CD pipeline.
